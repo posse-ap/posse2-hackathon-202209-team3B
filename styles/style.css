@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.showcase.active {
+    position: absolute;
+    right: 300px;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 1000;
+}
+
+.showcase h1 {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.showcase a {
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.toggle {
+    background: url("../images/menu.png");
+    width: 60px;
+    height: 60px;
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.toggle.active {
+    background: url("../images/close.png");
+    width: 60px;
+    height: 60px;
+    background-size: 30px;
+    background-position: left;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    background-color: rgb(0, 0, 0);
+}
+
+.menu ul {
+    list-style: none;
+    font-size: 24px;
+}
+.menu ul  li {
+    margin-bottom: 20px;
+    z-index: 5;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu ul li a:nth-child(1):hover {
+    color: #c109ff;
+    font-size: 30px;
+}
+.menu ul li a:nth-child(2):hover {
+    color: #09ff26;
+    font-size: 30px;
+}
+.menu ul li a:nth-child(3):hover {
+    color: #002aff;
+    font-size: 30px;
+}
+
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#ffffff;
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+.text h2 {
+    font-size: 6em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+}
+.text span {
+    -webkit-text-stroke: 1px #FFF;
+    color: #111;
+}
+.text p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+
+
+
+.scrolldown4{
+	position:absolute;
+	bottom:1%;
+	right:50%;
+	animation: arrowmove 1s ease-in-out infinite;
+}
+.scrolldown4 span{
+	position: absolute;
+	left:-20px;
+	bottom:10px;
+	color: #eee;
+	font-size: 0.7rem;
+	letter-spacing: 0.05em;
+	-ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+.scrolldown4:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    width: 2px;
+    height: 20px;
+    background: #eee;
+    transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+	content:"";
+	position: absolute;
+	bottom:0;
+	right:0;
+	width:2px;
+	height: 50px;
+	background:#eee;
+}
+
+
+.sec2 {
+    position: absolute;
+    top: 838px;
+    width: 100%;
+    height: 1800px;
+    background-color: #000000;
+}
+
+.card-profile{
+    position: relative;
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 50px;
+}
+.card-profile-img{
+    text-align: center;
+}
+
+.card-profile-img img{
+    width: 30%;
+    margin-top: 30px;
+}
+
+.card-profile-text{
+    color: #fff;
+    text-align: center;
+}
+
+.card-profile-text-title{
+    position: relative;
+    top: -40px;
+    font-size: 70px;
+    margin:0;
+    padding-bottom: 20px;
+}
+
+.card-profile-text-ex{
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.card-profile-text-button{
+    color: #fff;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+
+
+
+
+.talk{
+    background-color: black;
+    height: 850px;
+    width: 100%;
+    background-size: cover;
+    margin-top: 100px;
+    color: white;
+}
+
+.talk_inner{
+    padding-bottom: 1%;
+}
+
+.talk_body{
+    margin-left: 24%;
+    position: relative;
+    top: 50px;
+    letter-spacing: 0.14em;
+    padding-top: 0.01%;
+}
+
+.talk_body_title{
+    font-size: 3em;
+}
+
+.talk_body_catchcopy{
+    font-size: 2em;
+}
+.talk_image{
+    overflow: hidden;
+    text-align: center;
+}
+
+.talk_image img{
+    width: 40%;
+}
+
+.talk_scroll{
+    margin-left: 40%;
+    font-weight: 200;
+    font-size: 0.86em;
+    width: 35%;
+    line-height: 2.0; 
+    padding-top: 1.5%;
+}
+
+.talk_button{
+    align-items: center;
+    background-color: rgb(206, 40, 243);
+    border-radius: 3px;
+    width: 13%;
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
+    margin-left: 65%;
+    margin-top: 1.4%;
+    margin-bottom: 2.5%;
+}
+
+.talk_button_text{
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 1.3;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+
+.footer {
+    position: absolute;
+    top: 2700px;
+    width: 100%;
+    height: 150px;
+    background: rgb(0, 0, 0);
+    justify-content: space-between;
+    display: flex;
+    color: white;
+    border-top: 0.5px solid  #eee;
+}
+.footer_logo { 
+    margin-top: 80px;
+    display: flex;
+}
+.footer_logo h2 {
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    margin-right: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.footer_logo h2:nth-child(1) {
+    border-right: 1px solid white;
+}
+
+#page-top a{
+    background:#ff00e6;
+    color:#fff;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding:20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+}
+
+#page-top a:hover{
+    background: #777;
+}
+
+
+@keyframes arrowmove{
+    0%{bottom:1%;}
+    50%{bottom:3%;}
+    100%{bottom:1%;}
+}
+
+@media (max-width: 375px) {
+    .toggle {
+        margin-right: -40px;
+    }
+    .showcase, .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3rem;
+    }
+
+    .text h3 {
+        font-size: 3rem;
+    }
+    .text p {
+        font-size: 0.8rem;
+    }
+
+    .sec2  {
+        position: absolute;
+        top: 667px;
+    }
+    .card-profile-img img{
+        margin-top: 25%;
+        width: 70%;
+    }  
+    .card-profile-text-title {
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .card-profile-text-ex {
+        width: 80%;
+    }
+
+
+    .talk {
+        height: 600px;
+    }
+    
+    .talk_body{
+    margin-left: 7%;
+    position: relative;
+    top: 20px;
+    }
+
+    .talk_body_title{
+    font-size: 2em;
+    }
+
+    .talk_body_catchcopy{
+    font-size: 1.3em;
+    line-height: 10%;
+    }
+    .talk_scroll {
+        width: 60%;
+        margin-left: 120px;
+    }
+    .talk_image img{
+    width: 80%;
+    }
+
+    .talk_button_text{
+    font-size: 10px;
+    }
+    .talk_button {
+        width: 30%;
+        height: 20%;
+        margin-top: 20px;
+    }
+
+
+    footer {
+        width: 100%;
+        height: 10%;
+        margin-top: -500px;
+    }
+}
+
+
+@media  screen and (max-width: 700px) {
+    .card-profile-text-ex {
+        width: 80%;
+    }
+    .footer_logo {
+        width: 50%;
+    }
+    .footer_logo h2 {
+        margin-right: 10px;
+    }
+}
