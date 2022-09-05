@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.pair-title {
+  text-align: center;
+  color: #ce09ff;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.pair-whole {
+  background-color:#000000;
+  PADDING-bottom: 500px;
+}
+
+.pair-row1 {
+  display: flex;
+justify-content: space-around;
+}
+
+
+
+.pair-set {
+  background-color: #2d2929;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 3%;
+}
+
+.pair-content1{
+  background-color: #faf9f9;
+  width: 33%;
+  height: 260px;
+  /* background: url("../images/tinder/LINE_ALBUM_220904_0.jpg"); */
+  background-size: cover;
+}
+
+.pair-content2{
+  background-color: #faf9f9;
+  width: 33%;
+  height: 260px;
+  /* background: url("../images/tinder/LINE_ALBUM_220904_1.jpg"); */
+  background-size: cover;
+}
+.pair-content{
+  background-color: #faf9f9;
+  width: 33%;
+  height: 260px;
+  /* background: url("../images/tinder/LINE_ALBUM_220904_3.jpg"); */
+  background-size: cover;
+}
+
+
+.return-btn {
+  margin-bottom: 49%;
+  display: block;
+  width: 19%;
+  height: 10%;
+  background-color: rgb(251, 0, 255);
+  margin: 0 auto;
+}
+.return-btn a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+
+
+.scrolldown4{
+	position:absolute;
+	bottom:1%;
+	right:50%;
+	animation: arrowmove 1s ease-in-out infinite;
+}
+.scrolldown4 span{
+	position: absolute;
+	left:-20px;
+	bottom:10px;
+	color: #eee;
+	font-size: 0.7rem;
+	letter-spacing: 0.05em;
+	-ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+.scrolldown4:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    width: 2px;
+    height: 20px;
+    background: #eee;
+    transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+	content:"";
+	position: absolute;
+	bottom:0;
+	right:0;
+	width:2px;
+	height: 50px;
+	background:#eee;
+}
+
+
+
+@keyframes arrowmove{
+  0%{bottom:1%;}
+  50%{bottom:3%;}
+  100%{bottom:1%;}
+}
+
+
+
+@media screen and (max-width: 375px) {
+  .pair-row1 {
+    display: block;
+    width: 100%;
+    height: 600px;
+  }
+  .pair-set {
+    width: 100%;
+    height: 45%;
+  }
+  .pair-content1 {
+    width: 40%;
+  }
+  .pair-content2 {
+    width: 45%;
+  }
+
+  /* 後で削除 */
+  .pair-content {
+    width: 45%;
+  }
+}
+
+
+
+
+
+
+
+
+/* 
+    既存のクラス名に対してそれぞれにimgファイルを割り振る
+    そのクラスの追加順をJavaScriptで生成して追加する
+    クラスの追加順はランダム関数を利用　
+    上記のランダム関数の配列を一つずつ取ってくる
+*/
+
+/* 先に33個分vackground imgを作成 */
+
+.element1 {
+  width: 33%;
+    height: 280px;
+    background: url("../images/tinder/LINE_ALBUM_220904_1.jpg");
+    background-size: cover;
+}
+.element2 {
+  width: 33%;
+  height: 280px;
+  background: url("../images/tinder/LINE_ALBUM_220904_2.jpg");
+  background-size: cover;
+}
+.element3 {
+  width: 33%;
+  height: 280px;
+  background: url("../images/tinder/LINE_ALBUM_220904_3.jpg");
+  background-size: cover;
+}
+.element4 {
+  width: 33%;
+  height: 280px;
+  background: url("../images/tinder/LINE_ALBUM_220904_4.jpg");
+  background-size: cover;
+}
+.element5 {
+  width: 33%;
+  height: 280px;
+  background: url("../images/tinder/LINE_ALBUM_220904_5.jpg");
+  background-size: cover;
+}
+.element6 {
+  width: 33%;
+  height: 280px;
+  background: url("../images/tinder/LINE_ALBUM_220904_6.jpg");
+  background-size: cover;
+}
+.element7 {
+  width: 33%;
+  height: 280px;
+  background: url("../images/tinder/LINE_ALBUM_220904_7.jpg");
+  background-size: cover;
+}
+.element8 {
+  width: 33%;
+  height: 280px;
+  background: url("../images/tinder/LINE_ALBUM_220904_8.jpg");
+  background-size: cover;
+}
+.element9 {
+  width: 33%;
+  height: 280px;
+  background: url("../images/tinder/LINE_ALBUM_220904_9.jpg");
+  background-size: cover;
+}
+.element10 {
+  width: 33%;
+  height: 280px;
+  background: url("../images/tinder/LINE_ALBUM_220904_10.jpg");
+  background-size: cover;
+}
+
+/* 
+    現時点では１０個分生成　この後にのことの３４個分を生成予定
+    （うまく動けばの話、、、、）
+*/
