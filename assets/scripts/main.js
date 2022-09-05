@@ -7,7 +7,7 @@ menuToggle.addEventListener("click", function () {
 });
 
 ityped.init(document.querySelector("#ityped"), {
-    strings: ['POSSE3.0', 'ANYONE','VALUE'],
+    strings: ['POSSE3', 'ANYONE','VALUE'],
     typeSpeed:  500,   
     backSpeed:  150, 
     startDelay: 600,  
