@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.pair-title {
+  text-align: center;
+  color: #ce09ff;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.pair-whole {
+  background-color:#000000;
+  PADDING-bottom: 500px;
+}
+
+.pair-row1 {
+  display: flex;
+justify-content: space-around;
+}
+
+
+
+.pair-set {
+  background-color: #2d2929;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 3%;
+}
+
+.pair-content1{
+  background-color: #faf9f9;
+  width: 33%;
+  height: 260px;
+  background: url("../images/tinder/LINE_ALBUM_220904_0.jpg");
+  background-size: cover;
+}
+
+.pair-content2{
+  background-color: #faf9f9;
+  width: 33%;
+  height: 260px;
+  background: url("../images/tinder/LINE_ALBUM_220904_1.jpg");
+  background-size: cover;
+}
+.pair-content{
+  background-color: #faf9f9;
+  width: 33%;
+  height: 260px;
+  background: url("../images/tinder/LINE_ALBUM_220904_3.jpg");
+  background-size: cover;
+}
+
+
+.return-btn {
+  margin-bottom: 49%;
+  display: block;
+  width: 19%;
+  height: 4%;
+  background-color: rgb(251, 0, 255);
+  margin: 0 auto;
+  padding-bottom: 30%;
+}
+.return-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+
+@media screen and (max-width: 375px) {
+  .pair-row1 {
+    display: block;
+    width: 100%;
+    height: 600px;
+  }
+  .pair-set {
+    width: 100%;
+    height: 45%;
+  }
+  .pair-content1 {
+    width: 40%;
+  }
+  .pair-content2 {
+    width: 45%;
+  }
+
+  /* 後で削除 */
+  .pair-content {
+    width: 45%;
+  }
+}
+
+
